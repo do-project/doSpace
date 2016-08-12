@@ -1,0 +1,46 @@
+﻿{
+  "ID": "do_AccelerometerSensor",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "加速度传感器",
+  "Version": "Internal",
+  "Description": "",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [
+    {
+      "ID": "change",
+      "Description": "加速度变化触发",
+      "ReturnType": "Node",
+      "ReturnDesc": "{x:'x轴的加速度',y:'y轴的加速度',z:'z轴的加速度'}"
+    },
+    {
+      "ID": "shake",
+      "Description": "摇一摇",
+      "ReturnType": "String",
+      "ReturnDesc": "无"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

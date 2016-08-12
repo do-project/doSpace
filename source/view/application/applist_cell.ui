@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"isHeaderVisible":"true",
+				"templates":"source://view/application/model0.ui",
+				"width":"750",
+				"id":"do_ListView",
+				"type":"do_ListView",
+				"height":"1155"
+			}
+		],
+		"height":"1155"
+	}
+}

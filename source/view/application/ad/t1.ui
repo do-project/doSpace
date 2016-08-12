@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"width":"750",
+		"x":"0",
+		"y":"0",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"750",
+				"id":"adsecond",
+				"source":"source://image/ad2.jpg",
+				"type":"do_ImageView",
+				"enabled":"true",
+				"height":"400"
+			}
+		],
+		"height":"1334"
+	}
+}

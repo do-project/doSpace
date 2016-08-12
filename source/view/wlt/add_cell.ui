@@ -1,0 +1,19 @@
+{
+	"RootView":{
+		"width":"159",
+		"id":"do_alayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"159",
+				"scale":"fillxory",
+				"id":"icon",
+				"source":"source://image/apps@add.png",
+				"type":"do_ImageView",
+				"cacheType":"always",
+				"height":"159"
+			}
+		],
+		"height":"159"
+	}
+}

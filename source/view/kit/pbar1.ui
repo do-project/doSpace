@@ -1,0 +1,27 @@
+{
+	"RootView":{
+		"visible":"false",
+		"layoutAlign":"MiddleRight",
+		"width":"750",
+		"id":"do_alayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"width":"140",
+				"x":"460",
+				"y":"80",
+				"style":"horizontal",
+				"id":"do_progressbar",
+				"type":"do_ProgressBar"
+			},
+			{
+				"x":"610",
+				"y":"80",
+				"maxLines":"0",
+				"id":"lb_bfh",
+				"type":"do_Label"
+			}
+		],
+		"height":"1334"
+	}
+}

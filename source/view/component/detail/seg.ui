@@ -1,0 +1,15 @@
+{
+	"RootView":{
+		"width":"300",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"textAlign":"center",
+				"width":"300",
+				"fontSize":"25",
+				"id":"do_Label_1",
+				"type":"do_Label"
+			}
+		]
+	}
+}

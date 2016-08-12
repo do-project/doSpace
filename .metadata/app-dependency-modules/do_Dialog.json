@@ -1,0 +1,85 @@
+﻿{
+  "ID": "do_Dialog",
+  "IsContainer": "0",
+  "Type": "SM",
+  "Name": "窗口",
+  "Version": "Internal",
+  "Description": "显示在屏幕上的窗口",
+  "Icon": "",
+  "IOS": {
+    "Support": 1,
+    "MinVersion": "7"
+  },
+  "Android": {
+    "Support": 1,
+    "MinVersion": "4.0"
+  },
+  "Windows": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "WindowsPhone": {
+    "Support": 1,
+    "MinVersion": "10"
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [],
+  "Events": [],
+  "syncMethodes": [
+    {
+      "ID": "close",
+      "Name": "关闭窗口",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "传递数据",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "在关闭窗口时data参数传递给open方法的回调函数"
+        }
+      ]
+    },
+    {
+      "ID": "getData",
+      "Name": "获取数据",
+      "Description": "",
+      "ReturnType": "String",
+      "ReturnDesc": "获取open方法的data参数保存的数据",
+      "Paras": []
+    }
+  ],
+  "asyncMethodes": [
+    {
+      "ID": "open",
+      "Name": "打开窗口",
+      "Description": "打开的窗口在屏幕中居中显示",
+      "ReturnType": "",
+      "ReturnDesc": "返回close方法的data参数值",
+      "Paras": [
+        {
+          "ID": "path",
+          "Name": "要显示的窗口路径",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "支持source和data目录"
+        },
+        {
+          "ID": "data",
+          "Name": "数据",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "传递到Dialog的数据，通过getData方法获取该数据"
+        }
+      ]
+    }
+  ]
+}

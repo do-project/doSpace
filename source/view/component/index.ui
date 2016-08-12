@@ -1,0 +1,34 @@
+{
+	"RootView":{
+		"bgColor":"F7F7F7FF",
+		"x":"0",
+		"width":"750",
+		"y":"0",
+		"id":"do_ALayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"templates":"source://view/component/componentlist_cell.ui",
+				"width":"750",
+				"y":"80",
+				"id":"do_SlideView",
+				"type":"do_SlideView",
+				"height":"1159"
+			},
+			{
+				"bgColor":"FFFFFFFF",
+				"width":"750",
+				"id":"do_ALayout_2",
+				"type":"do_ALayout"
+			},
+			{
+				"templates":"source://view/component/seg.ui",
+				"width":"750",
+				"id":"do_SegmentView",
+				"type":"do_SegmentView",
+				"height":"79"
+			}
+		],
+		"height":"1334"
+	}
+}

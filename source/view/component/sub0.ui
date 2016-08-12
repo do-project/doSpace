@@ -1,0 +1,17 @@
+{
+	"RootView":{
+		"width":"750",
+		"id":"do_ALayout_1",
+		"type":"do_ALayout",
+		"views":[
+			{
+				"templates":"source://view/component/model0.ui",
+				"width":"750",
+				"id":"do_ListView_1",
+				"type":"do_ListView",
+				"height":"1034"
+			}
+		],
+		"height":"1334"
+	}
+}
