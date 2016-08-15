@@ -9,7 +9,7 @@ var dmodule = "" // 组件
 var user_login = ""
 var user_getcode = ""
 var user_reg = ""
-var sc = ""
+var sc = "http://ins.deviceone.cn/d1portal/user/"
 var uploadImgUrl = "";
 var ios_update_Url = ""
 
