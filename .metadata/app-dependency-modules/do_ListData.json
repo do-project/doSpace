@@ -5,10 +5,10 @@
   "Name": "列表数据源",
   "Version": "Internal",
   "Description": "ListData作为一个内存数据源 ,可以参考ListView的bindItems方法。也可以作为ListView，GridView的Item的数据集。它本质上是一个可变数组,可以增删改查.",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_ListData/列表数据源.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_ListData/列表数据源.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "iOS 7.0"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -34,12 +34,14 @@
       "Name": "增加数据",
       "Description": "在list增加一个或多个数据，index是可选参数，如果该参数不填表示插入到队列最尾",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "data",
           "Name": "",
           "Type": "Node",
+          "Type_JavaScript": "Node",
           "Required": 1,
           "DefaultValue": "",
           "Description": "要插入的数据"
@@ -48,6 +50,7 @@
           "ID": "index",
           "Name": "",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 0,
           "DefaultValue": "",
           "Description": "表示要添加的位置，从0开始; 如果 index参数为空或者越界, 就添加到数组最后面"
@@ -59,12 +62,14 @@
       "Name": "插入一条数据",
       "Description": "在list增加一条数据，index是可选参数，表示要添加的位置，从0开始; 如果 index参数为空或者越界, 就添加到数组最后面",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "data",
           "Name": "",
           "Type": "Node",
+          "Type_JavaScript": "Node",
           "Required": 1,
           "DefaultValue": "",
           "Description": "向数据集添加一条数据，该数据可为String,Number,Boolean, Array<String|Number|Boolean>, Object<String|Number|Boolean>.(能够被JSON.stringify序列化的类型)"
@@ -73,6 +78,7 @@
           "ID": "index",
           "Name": "",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 0,
           "DefaultValue": "",
           "Description": "插入索引"
@@ -84,6 +90,7 @@
       "Name": "获取数量",
       "Description": "",
       "ReturnType": "Number",
+      "ReturnType_JavaScript": "Number",
       "ReturnDesc": "元素个数",
       "Paras": []
     },
@@ -92,12 +99,14 @@
       "Name": "获取多条数据",
       "Description": "indexs数组中的每一个值表示要读取的索引位置，从0开始;其它越界的索引位置都返回null",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "行数据",
       "Paras": [
         {
           "ID": "indexs",
           "Name": "行数",
           "Type": "Node",
+          "Type_JavaScript": "Node",
           "Required": 1,
           "DefaultValue": "",
           "Description": "表示需要得到的索引队列;如[0,2,3,4,6]"
@@ -109,12 +118,14 @@
       "Name": "获取某一行数据",
       "Description": "根据index获取特定行的数据，从0开始; 如果index参数小于0则取数组第一个元素；如果 index参数越界，则返回数组最后一个元素（如果数据源为空则返回null）",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "行数据",
       "Paras": [
         {
           "ID": "index",
           "Name": "行数",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -126,12 +137,14 @@
       "Name": "获取多条数据",
       "Description": "从起始索引到截止索引，获取多条数据",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "fromIndex",
           "Name": "起始索引位置",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "",
           "Description": "从0开始，fromIndex必须小于或等于toIndex"
@@ -140,6 +153,7 @@
           "ID": "toIndex",
           "Name": "截止索引位置",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 0,
           "DefaultValue": "",
           "Description": "截止索引位置(可选项)，从0开始; 如果为空，则表示数组的最后一个元素位置"
@@ -151,6 +165,7 @@
       "Name": "清空数据",
       "Description": "清除所有数据",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": []
     },
@@ -159,12 +174,14 @@
       "Name": "删除特定行的对象",
       "Description": "根据多个index删除多条数据",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "indexs",
           "Name": "索引数组",
           "Type": "Node",
+          "Type_JavaScript": "Node",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -176,12 +193,14 @@
       "Name": "删除指定行数据",
       "Description": "从起始索引到截止索引删除多条数据",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "fromIndex",
           "Name": "起始索引位置",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "",
           "Description": "从0开始，fromIndex必须小于或等于toIndex"
@@ -190,6 +209,7 @@
           "ID": "toIndex",
           "Name": "截止索引位置",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 0,
           "DefaultValue": "",
           "Description": "表示要删除的位置，从0开始; 如果为空或者越界，则表示数组的最后一个元素位置"
@@ -201,12 +221,14 @@
       "Name": "更新一条数据",
       "Description": "更新特定行的数据，index表示要修改的位置，从0开始; 如果index参数为空或者越界就什么都不改",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "index",
           "Name": "数据索引",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -215,6 +237,7 @@
           "ID": "data",
           "Name": "数据",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""

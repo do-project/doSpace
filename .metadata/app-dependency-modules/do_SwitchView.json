@@ -5,7 +5,7 @@
   "Name": "开关",
   "Version": "Internal",
   "Description": "SwitchView 是一个带有开关选择的UI组件，只有（开，关）两种状态，点击或拽动改变状态，该组件的样式是跟随系统，各平台显示效果不完全一样 ，可以应用于是否记住密码场景和一些具有布尔类型的配置页面",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_SwitchView/开关.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_SwitchView/开关.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"

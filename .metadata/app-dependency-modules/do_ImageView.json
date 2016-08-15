@@ -5,14 +5,14 @@
   "Name": "图片控件",
   "Version": "Internal",
   "Description": "图片控件，可以设置图片背景，也可以设置点击事件作为特殊的按钮使用，当不清楚原图大小时可设置宽高为-1，会显示原始大小的宽高",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_ImageView/图片.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_ImageView/图片.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "iOS 7.0"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
-    "MinVersion": "14"
+    "MinVersion": "4.0"
   },
   "Windows": {
     "Support": 1,
@@ -31,6 +31,7 @@
       "ID": "animation",
       "Name": "动画效果",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "none",
       "EditType": "1",
       "Group": "",
@@ -53,6 +54,7 @@
       "ID": "cacheType",
       "Name": "是否支持网络图片的本地cache",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "never",
       "EditType": "0",
       "Group": "",
@@ -79,6 +81,7 @@
       "ID": "defaultImage",
       "Name": "默认图片",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
@@ -92,6 +95,7 @@
       "ID": "enabled",
       "Name": "是否可点击",
       "Type": "Bool",
+      "Type_JavaScript": "Bool",
       "DefaultValue": "false",
       "EditType": "1",
       "Group": "",
@@ -105,10 +109,11 @@
       "ID": "radius",
       "Name": "圆角半径",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "0",
       "EditType": "0",
       "Group": "",
-      "Description": "像素值，为0时表示不是圆角图片",
+      "Description": "像素值，为0时表示不是圆角图片；当同时设置了border属性，则radius属性失效",
       "Design": {
         "Type": "UInteger",
         "Data": []
@@ -118,6 +123,7 @@
       "ID": "scale",
       "Name": "图片显示类型",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "fillxy",
       "EditType": "0",
       "Group": "",
@@ -148,10 +154,11 @@
       "ID": "source",
       "Name": "图片路径",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
-      "Description": "可设置html链接或本地文件，支持：http:// https:// data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类",
+      "Description": "可设置网络或本地文件，支持：http:// https:// data:// source:// 打头的URI格式，不能包含@符号。其中文件格式说明可参考Storage类",
       "Design": {
         "Type": "ImageSource",
         "Data": []
@@ -163,9 +170,30 @@
       "ID": "touch",
       "Description": "点击触发这个事件",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": ""
     }
   ],
-  "syncMethodes": [],
+  "syncMethodes": [
+    {
+      "ID": "setBitmap",
+      "Name": "绑定bitmap对象",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnType_JavaScript": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "bitmap",
+          "Name": "bitmap对象",
+          "Type": "String",
+          "Type_JavaScript": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": ""
+        }
+      ]
+    }
+  ],
   "asyncMethodes": []
 }

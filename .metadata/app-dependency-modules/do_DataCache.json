@@ -5,7 +5,7 @@
   "Name": "数据缓存",
   "Version": "Internal",
   "Description": "缓存一些数据到本地文件，即使程序退出再进入还能获取到值，要确保设置的value值不要过大",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_DataCache/缓存管理.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_DataCache/缓存管理.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -34,12 +34,14 @@
       "Name": "是否有数据",
       "Description": "判断是否有数据",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true有数据，false没有",
       "Paras": [
         {
           "ID": "key",
           "Name": "",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -51,12 +53,14 @@
       "Name": "读数据",
       "Description": "把数据从缓存取出",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "返回读取的数据值",
       "Paras": [
         {
           "ID": "key",
           "Name": "",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -68,6 +72,7 @@
       "Name": "删除全部数据",
       "Description": "",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true为成功，false为失败",
       "Paras": []
     },
@@ -76,12 +81,14 @@
       "Name": "删除数据",
       "Description": "清楚某个key的数据",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true/false表明删除是否成功",
       "Paras": [
         {
           "ID": "key",
           "Name": "",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -93,12 +100,14 @@
       "Name": "写数据",
       "Description": "把数据写入缓存",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true/false表明写数据是否成功",
       "Paras": [
         {
           "ID": "key",
           "Name": "",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -107,6 +116,7 @@
           "ID": "value",
           "Name": "",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""

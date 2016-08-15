@@ -5,7 +5,7 @@
   "Name": "按钮控件",
   "Version": "Internal",
   "Description": "按钮控件，支持通常按钮的属性，方法和事件，缺省是透明无边框。",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150730/eb14ed68-49e5-4046-ae0e-47d4fc544333.png",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Button/按钮.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,

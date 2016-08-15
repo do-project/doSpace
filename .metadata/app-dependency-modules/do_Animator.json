@@ -5,7 +5,7 @@
   "Name": "属性动画组合",
   "Version": "Internal",
   "Description": "控制UI组件动画的状态变化，每个状态点都支持对应5种属性的变化:x, y, width,height,bgColor；也支持修改透明值alpha，如50表示半透明，若同时用bgColor的后两位和alpha修改了透明值，以alpha为主，若alpha为父容器，则里面的子组件的透明值也随着改变",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_Animator/帧动画.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Animator/帧动画.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,

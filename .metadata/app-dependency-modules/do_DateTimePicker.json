@@ -5,7 +5,7 @@
   "Name": "日期,时间选择控件",
   "Version": "Internal",
   "Description": "弹出时间，日期选择窗口来选择时间，时间格式都是long型时间戳格式，windows平台不支持long型",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_DateTimePicker/日期.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_DateTimePicker/日期.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"

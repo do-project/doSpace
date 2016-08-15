@@ -4,8 +4,8 @@
   "Type": "UI",
   "Name": "二维码扫描视图",
   "Version": "Internal",
-  "Description": "能设置view的基本属性，宽高等，扫描狂内有矩形校正区域，扫描时有简单的动画显示，支持普通的一维码、二维码（包括QR码、DM码）并获取内容",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_BarcodeView/QR二维码.jpg",
+  "Description": "条码扫描视图，能设置view的基本属性，宽高等，扫描框内有矩形校正区域，扫描时有简单的动画显示，支持一维码、二维码（包括QR码、DM码等），若想在页面已启动时就加载扫描功能，建议将start方法放在do_Page的loaded事件回调中执行",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_BarcodeView/QR二维码.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -31,12 +31,13 @@
       "ID": "scanArea",
       "Name": "扫描的区域",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
-      "Description": "设置扫描区域的位置和宽高，x,y,width,height，中间用逗号隔开；扫描区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示",
+      "Description": "设置扫描区域的位置和宽高，x,y,width,height，中间用逗号隔开；扫描区域不建议设置超出组件本身宽高和范围；默认值取控件的一半宽高，居中显示，修改后必须重新调start才会生效",
       "Design": {
-        "Type": "Richtext",
+        "Type": "Text",
         "Data": []
       }
     }
@@ -48,13 +49,15 @@
       "Name": "开关闪光灯",
       "Description": "开关手机系统闪光灯",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "status",
           "Name": "闪光灯状态",
           "Type": "String",
-          "Required": 0,
+          "Type_JavaScript": "String",
+          "Required": 1,
           "DefaultValue": "",
           "Description": "闪光灯状态，支持两种状态：on（开启）、off（关闭）"
         }
@@ -65,9 +68,10 @@
     {
       "ID": "start",
       "Name": "启动扫描",
-      "Description": "条形码扫描框第1次加载时，默认启动扫描，在扫描成功时会自动停止，需要再次调用该方法启用扫描功能",
+      "Description": "条码扫描成功后会自动停止并执行异步回调，将扫描结果返回，如需再次扫描需重新调用该方法",
       "ReturnType": "Node",
-      "ReturnDesc": "扫描成功回调会返回一个JSON数据参数给onscaned对应的回调函数，node格式：{code:'',value:''}",
+      "ReturnType_JavaScript": "Node",
+      "ReturnDesc": "返回data是一个JSON对象类型",
       "Paras": []
     }
   ]

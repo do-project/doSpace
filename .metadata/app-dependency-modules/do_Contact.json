@@ -5,10 +5,10 @@
   "Name": "通讯录",
   "Version": "Internal",
   "Description": "针对通讯录的增删查改",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_Contact/通讯录.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Contact/通讯录.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "7"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,

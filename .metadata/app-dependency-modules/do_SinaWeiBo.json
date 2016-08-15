@@ -5,7 +5,7 @@
   "Name": "使用sina微博登录第三方应用",
   "Version": "Internal",
   "Description": "提供sina微博用户登录和分享相关功能",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/3fb18f4f-8700-4743-a636-28e8aa76be20.png",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_SinaWeiBo/微博.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"

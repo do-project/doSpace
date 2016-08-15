@@ -5,7 +5,7 @@
   "Name": "辅助按钮",
   "Version": "Internal",
   "Description": "可用于模拟类似iOS设备的AssistiveTouch按钮，支持自定义样式和大小；android平台需要通过订阅page组件的pause和result事件来控制组件的显示和隐藏",
-  "Icon": "",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_AssistiveTouch/辅助按钮.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -32,6 +32,7 @@
       "ID": "touch",
       "Description": "点击view触发",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": ""
     }
   ],
@@ -41,6 +42,7 @@
       "Name": "隐藏辅助按钮",
       "Description": "",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": []
     },
@@ -49,12 +51,14 @@
       "Name": "显示辅助按钮",
       "Description": "可设置view的样式、位置和是否移动",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "location",
           "Name": "view初始的位置",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "x,y，中间用逗号隔开"
@@ -63,6 +67,7 @@
           "ID": "image",
           "Name": "view的展示图片",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "图片地址，支持source://、data://路径"
@@ -71,6 +76,7 @@
           "ID": "isMove",
           "Name": "是否支持移动",
           "Type": "Bool",
+          "Type_JavaScript": "Bool",
           "Required": 0,
           "DefaultValue": "true",
           "Description": "view是否支持移动，缺省支持"

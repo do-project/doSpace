@@ -77,7 +77,7 @@
     },
     {
       "ID": "isHeaderVisible",
-      "Name": "显示顶部",
+      "Name": "是否显示headerview",
       "Type": "Bool",
       "DefaultValue": "false",
       "EditType": "0",

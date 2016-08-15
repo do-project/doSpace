@@ -4,8 +4,8 @@
   "Type": "UI",
   "Name": "进度条2",
   "Version": "Internal",
-  "Description": "环行进度条，进度条大小为组件最大内接圆，居中显示在组件范围内；不支持Windows平台",
-  "Icon": "",
+  "Description": "环行进度条，进度条大小为组件最大内接圆，居中显示在组件范围内",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_ProgressBar2/进度条progress.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -15,12 +15,12 @@
     "MinVersion": "4.0"
   },
   "Windows": {
-    "Support": 0,
-    "MinVersion": ""
+    "Support": 1,
+    "MinVersion": "10"
   },
   "WindowsPhone": {
-    "Support": 0,
-    "MinVersion": ""
+    "Support": 1,
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -31,6 +31,7 @@
       "ID": "fontColor",
       "Name": "字体颜色",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "000000FF",
       "EditType": "1",
       "Group": "",
@@ -44,12 +45,13 @@
       "ID": "fontSize",
       "Name": "字体大小",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "17",
       "EditType": "1",
       "Group": "",
       "Description": "",
       "Design": {
-        "Type": "Integer",
+        "Type": "UInteger",
         "Data": []
       }
     },
@@ -57,12 +59,13 @@
       "ID": "progress",
       "Name": "进度值",
       "Type": "Number",
-      "DefaultValue": "",
+      "Type_JavaScript": "Number",
+      "DefaultValue": "0",
       "EditType": "1",
       "Group": "",
       "Description": "设置进度值，取值范围是0-100的浮点值,进度条样式是普通样式时有效",
       "Design": {
-        "Type": "Integer",
+        "Type": "Text",
         "Data": []
       }
     },
@@ -70,7 +73,8 @@
       "ID": "progressBgColor",
       "Name": "进度条背景颜色",
       "Type": "String",
-      "DefaultValue": "",
+      "Type_JavaScript": "String",
+      "DefaultValue": "FFFFFFFF",
       "EditType": "1",
       "Group": "",
       "Description": "8位16进制整数，前6位为rgb颜色值，后两位为透明度",
@@ -83,7 +87,8 @@
       "ID": "progressColor",
       "Name": "进度颜色",
       "Type": "String",
-      "DefaultValue": "",
+      "Type_JavaScript": "String",
+      "DefaultValue": "000000FF",
       "EditType": "1",
       "Group": "",
       "Description": "8位16进制整数，前6位为rgb颜色值，后两位为透明度",
@@ -95,13 +100,14 @@
     {
       "ID": "progressWidth",
       "Name": "进度宽度",
-      "Type": "String",
+      "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "1",
       "EditType": "1",
       "Group": "",
       "Description": "进度宽度，范围 为1-100，表示占环形进度条最外圈半径的百分比，如20表示占环形进度条半径的20%宽度",
       "Design": {
-        "Type": "Integer",
+        "Type": "UInteger",
         "Data": []
       }
     },
@@ -109,6 +115,7 @@
       "ID": "style",
       "Name": "进度条样式",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "normal",
       "EditType": "0",
       "Group": "",
@@ -131,6 +138,7 @@
       "ID": "text",
       "Name": "文本",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",

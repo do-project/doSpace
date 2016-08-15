@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -31,6 +31,7 @@
       "ID": "clearAll",
       "Name": "输入框中显示叉号",
       "Type": "Bool",
+      "Type_JavaScript": "Bool",
       "DefaultValue": "false",
       "EditType": "0",
       "Group": "",
@@ -41,9 +42,24 @@
       }
     },
     {
+      "ID": "clearImg",
+      "Name": "删除标记图片",
+      "Type": "String",
+      "Type_JavaScript": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "不设置或该属性为空时会显示默认图片，默认为在文本框右侧的一个叉号标记；否则显示设置的图片，支持data://和source://目录；windows平台不支持",
+      "Design": {
+        "Type": "ImageSource",
+        "Data": []
+      }
+    },
+    {
       "ID": "cursorColor",
       "Name": "光标颜色",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "000000FF",
       "EditType": "1",
       "Group": "",
@@ -57,6 +73,7 @@
       "ID": "enabled",
       "Name": "是否可编辑",
       "Type": "Bool",
+      "Type_JavaScript": "Bool",
       "DefaultValue": "true",
       "EditType": "1",
       "Group": "",
@@ -70,6 +87,7 @@
       "ID": "enterText",
       "Name": "按钮文字",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "default",
       "EditType": "0",
       "Group": "",
@@ -108,6 +126,7 @@
       "ID": "fontColor",
       "Name": "字体颜色",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "000000FF",
       "EditType": "1",
       "Group": "",
@@ -121,6 +140,7 @@
       "ID": "fontSize",
       "Name": "字体大小",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "17",
       "EditType": "1",
       "Group": "",
@@ -134,10 +154,11 @@
       "ID": "fontStyle",
       "Name": "字体风格",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "normal",
       "EditType": "1",
       "Group": "",
-      "Description": "包含4种类型：\r\nnormal：常规\r\nbold：粗体\r\nitalic：斜体\r\nbold_italic：粗斜体",
+      "Description": "包含4种类型：normal：常规；bold：粗体；italic：斜体；bold_italic：粗斜体（iOS平台不支持）",
       "Design": {
         "Type": "List",
         "Data": [
@@ -164,6 +185,7 @@
       "ID": "hint",
       "Name": "提示信息",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
@@ -177,6 +199,7 @@
       "ID": "hintColor",
       "Name": "提示信息字体颜色",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "808080FF",
       "EditType": "1",
       "Group": "",
@@ -190,10 +213,11 @@
       "ID": "inputType",
       "Name": "输入类型",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "ENG",
-      "EditType": "0",
+      "EditType": "1",
       "Group": "",
-      "Description": "输入类型，不设置这个属性的时候会使用系统默认键盘支持所有字符，可设置的值包括以下4种:\n\t\r\n\"ASC\" ：支持ASCII的默认键盘\n\r\n\"PHONENUMBER\" ：标准电话键盘，支持＋＊＃字符\n\r\n\"URL\" ：URL键盘，支持.com按钮 只支持URL字符\n\t\t\r\n\"ENG\" :英文键盘",
+      "Description": "输入类型，不设置这个属性的时候会使用系统默认键盘支持所有字符，可设置的值包括以下5种:\n\t\r\n\"ASC\" ：支持ASCII的默认键盘\n\r\n\"PHONENUMBER\" ：标准电话键盘，支持＋＊＃字符\n\r\n\"URL\" ：URL键盘，支持.com按钮 只支持URL字符\n\t\t\r\n\"ENG\" :英文键盘\r\n\"DECIMAL\" :数字与小数点键盘（仅支持iOS平台）",
       "Design": {
         "Type": "List",
         "Data": [
@@ -212,6 +236,10 @@
           {
             "id": "ENG",
             "value": "英文键盘"
+          },
+          {
+            "id": "DECIMAL",
+            "value": "数字与小数点键盘"
           }
         ]
       }
@@ -220,6 +248,7 @@
       "ID": "maxLength",
       "Name": "可允许输入的最大长度",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "100",
       "EditType": "0",
       "Group": "",
@@ -233,6 +262,7 @@
       "ID": "password",
       "Name": "隐藏输入字符",
       "Type": "Bool",
+      "Type_JavaScript": "Bool",
       "DefaultValue": "false",
       "EditType": "1",
       "Group": "",
@@ -246,6 +276,7 @@
       "ID": "text",
       "Name": "文本内容",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "",
       "EditType": "1",
       "Group": "",
@@ -259,6 +290,7 @@
       "ID": "textAlign",
       "Name": "文本对齐方式",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "left",
       "EditType": "0",
       "Group": "",
@@ -285,6 +317,7 @@
       "ID": "textFlag",
       "Name": "字体标示",
       "Type": "String",
+      "Type_JavaScript": "String",
       "DefaultValue": "normal",
       "EditType": "0",
       "Group": "",
@@ -313,24 +346,28 @@
       "ID": "enter",
       "Description": "点击键盘右下角按钮时触发",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": ""
     },
     {
       "ID": "focusIn",
       "Description": "进入编辑状态",
       "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
       "ReturnDesc": "返回键盘高度，{keybordHeight:'25'}"
     },
     {
       "ID": "focusOut",
       "Description": "离开编辑状态",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": ""
     },
     {
       "ID": "textChanged",
       "Description": "文字变化时触发",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": ""
     }
   ],
@@ -340,12 +377,14 @@
       "Name": "设置焦点",
       "Description": "设置是否得到焦点，得到焦点时软键盘弹出，失去焦点时软键盘收起",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "value",
           "Name": "焦点值",
           "Type": "Bool",
+          "Type_JavaScript": "Bool",
           "Required": 1,
           "DefaultValue": "false",
           "Description": "为true时有焦点，false时无焦点"
@@ -357,12 +396,14 @@
       "Name": "设置光标位置",
       "Description": "",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "position",
           "Name": "光标位置",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "0",
           "Description": "表示在已有字符的第几个位置，从0开始，比如文本框内有5个字符，position设置为3，光标即在第4个字符之前"

@@ -5,7 +5,7 @@
   "Name": "Socket请求服务",
   "Version": "Internal",
   "Description": "通过Socket建立网络连接，进行通信",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_Socket/socket.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Socket/socket.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"

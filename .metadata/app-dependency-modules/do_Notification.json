@@ -5,10 +5,10 @@
   "Name": "通知类",
   "Version": "Internal",
   "Description": "各种方式提醒和通知用户",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150723/4b65fbd9-a4e4-47b8-9527-c56f5baea31b.png",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_Notification/通知notify.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "iOS7.0"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,

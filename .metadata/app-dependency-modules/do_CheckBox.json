@@ -5,7 +5,7 @@
   "Name": "复选框",
   "Version": "Internal",
   "Description": "",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150723/3eac1bdc-176d-44ab-93e6-ce4ffb205ff3.png",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_CheckBox/复选框.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -86,7 +86,7 @@
       "DefaultValue": "normal",
       "EditType": "1",
       "Group": "",
-      "Description": "包含4种类型：\r\nnormal：常规\r\nbold：粗体\r\nitalic：斜体\r\nbold_italic：粗斜体",
+      "Description": "包含4种类型：normal：常规bold：粗体italic：斜体bold_italic：粗斜体（iOS平台不支持）",
       "Design": {
         "Type": "List",
         "Data": [

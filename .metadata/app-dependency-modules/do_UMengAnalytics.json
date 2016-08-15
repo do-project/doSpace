@@ -5,7 +5,7 @@
   "Name": "友盟统计分析",
   "Version": "Internal",
   "Description": "",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/798551ed-7b56-4d67-8079-3a3153e1a7c8.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_UMengAnalytics/友盟.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -124,7 +124,7 @@
     {
       "ID": "readConfig",
       "Name": "读取在线参数",
-      "Description": "",
+      "Description": "iOS平台不支持",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": [

@@ -5,7 +5,7 @@
   "Name": "多选框控件",
   "Version": "Internal",
   "Description": "多选择框列表，支持选一个或多项功能",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_MultiSelectComboBox/多选框.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_MultiSelectComboBox/多选框.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"
@@ -197,7 +197,7 @@
           "Type": "Node",
           "Required": 0,
           "DefaultValue": "",
-          "Description": ""
+          "Description": "比如[{'text':'a1','id':'1'},{'text':'a2','id':'2'}]，其中text字段是必须的，用于显示文本内容，这里显示的就是a1，a2，其他字段可任意增加，根据选择的item索引获取内容"
         }
       ]
     },

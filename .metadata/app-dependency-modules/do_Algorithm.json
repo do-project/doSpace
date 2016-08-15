@@ -198,6 +198,56 @@
       ]
     },
     {
+      "ID": "hex2Binary",
+      "Name": "十六进制转二进制",
+      "Description": "把十六进制数据转换成二进制并保存成文件放在指定目录下",
+      "ReturnType": "Bool",
+      "ReturnDesc": "返回转换是否成功，true为成功，false失败",
+      "Paras": [
+        {
+          "ID": "source",
+          "Name": "十六进制数据",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "用十六进制字符串表示的数据"
+        },
+        {
+          "ID": "path",
+          "Name": "目标路径",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "要保存的二进制文件全路径,支持data://"
+        }
+      ]
+    },
+    {
+      "ID": "hex2Str",
+      "Name": "十六进制转字符串",
+      "Description": "把十六进制数据按特定编码格式转成字符串",
+      "ReturnType": "String",
+      "ReturnDesc": "返回转换之后的字符串",
+      "Paras": [
+        {
+          "ID": "source",
+          "Name": "十六进制数据",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "用十六进制字符串表示的数据"
+        },
+        {
+          "ID": "encoding",
+          "Name": "编码格式",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "utf-8",
+          "Description": "指定编码格式，默认使用utf-8格式"
+        }
+      ]
+    },
+    {
       "ID": "md5",
       "Name": "md5算法",
       "Description": "",

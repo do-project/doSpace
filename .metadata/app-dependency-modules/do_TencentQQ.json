@@ -2,10 +2,10 @@
   "ID": "do_TencentQQ",
   "IsContainer": "0",
   "Type": "SM",
-  "Name": "使用qq登录第三方应用",
+  "Name": "QQ相关功能",
   "Version": "Internal",
   "Description": "提供QQ登录和分享相关的功能",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_TencentQQ/QQ.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_TencentQQ/QQ.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"
@@ -35,12 +35,14 @@
       "Name": "获取用户信息",
       "Description": "获取用户信息",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "返回是一个String,里面包含了用户的基本信息，头像，昵称...",
       "Paras": [
         {
           "ID": "token",
           "Name": "access_token",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -49,6 +51,7 @@
           "ID": "expires",
           "Name": "expires_in",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -57,6 +60,7 @@
           "ID": "openId",
           "Name": "openid",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": ""
@@ -68,12 +72,14 @@
       "Name": "使用QQ登录",
       "Description": "使用QQ登录获取用户登录的信息",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "返回用户登录的信息{\"ret\": 0,\"pay_token\": \"0778657200B8F00BAFD7F4BB07814C25\",\"pf\": \"desktop_m_QQ-10000144-android-2002-\",\"query_authority_cost\": 288,\"authority_cost\": -831427405,\"openid\": \"7FA197F8DCDD7AAF58ADFB78ED5EAC1F\",\"expires_in\": 7776000,\"pfkey\": \"357daa137145123b502e4617986ebef3\",\"msg\": \"\",\"access_token\": \"08883692C36350C78D7E0F25CBC796F6\",\"login_cost\": 342}",
       "Paras": [
         {
           "ID": "appId",
           "Name": "appId",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "在QQ互联申请的appId"
@@ -85,6 +91,7 @@
       "Name": "注销",
       "Description": "注销登录",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true 注销成功，false 注销失败",
       "Paras": []
     },
@@ -93,12 +100,14 @@
       "Name": "分享到QQ好友",
       "Description": "分享到QQ好友",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true 分享成功，false 分享失败",
       "Paras": [
         {
           "ID": "appId",
           "Name": "appId",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "在QQ互联申请的appId"
@@ -107,6 +116,7 @@
           "ID": "type",
           "Name": "分享的类型",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "0",
           "Description": "0：默认，图文分享；1：纯图分享，只支持本地图；2：音乐分享；3：应用分享"
@@ -115,6 +125,7 @@
           "ID": "title",
           "Name": "标题",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "分享的标题, 最长30个字符"
@@ -123,6 +134,7 @@
           "ID": "url",
           "Name": "目标地址",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
           "Description": "分享后点击文本后打开的地址"
@@ -131,14 +143,16 @@
           "ID": "image",
           "Name": "图片地址",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
-          "Description": "分享后显示的图片，纯图分享时候不能为空，只支持本地图片data://目录"
+          "Description": "分享后显示的图片，纯图分享时候不能为空，仅支持本地图片data://目录"
         },
         {
           "ID": "summary",
           "Name": "摘要",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
           "Description": "分享的消息摘要，最长40个字"
@@ -147,6 +161,7 @@
           "ID": "audio",
           "Name": "音乐文件的远程链接",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
           "Description": "音乐文件的远程链接, 以URL的形式传入, 不支持本地音乐"
@@ -155,6 +170,7 @@
           "ID": "appName",
           "Name": "应用名称",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
           "Description": ""
@@ -166,12 +182,14 @@
       "Name": "分享到QQ空间",
       "Description": "分享到QQ空间",
       "ReturnType": "Bool",
+      "ReturnType_JavaScript": "Bool",
       "ReturnDesc": "true 分享成功，false 分享失败",
       "Paras": [
         {
           "ID": "appId",
           "Name": "appId",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "在QQ互联申请的appId"
@@ -180,6 +198,7 @@
           "ID": "type",
           "Name": "分享的类型",
           "Type": "Number",
+          "Type_JavaScript": "Number",
           "Required": 1,
           "DefaultValue": "0",
           "Description": "0：默认，图文分享；1：应用分享"
@@ -188,6 +207,7 @@
           "ID": "title",
           "Name": "标题",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "分享的标题, 最长200个字符"
@@ -196,6 +216,7 @@
           "ID": "url",
           "Name": "目标地址",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
           "Description": "分享后点击文本后打开的地址"
@@ -204,14 +225,16 @@
           "ID": "image",
           "Name": "图片地址",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "分享后显示的图片，只支持本地图片data://目录"
+          "Description": "分享后显示的图片，仅支持本地图片data://目录"
         },
         {
           "ID": "summary",
           "Name": "摘要",
           "Type": "String",
+          "Type_JavaScript": "String",
           "Required": 0,
           "DefaultValue": "",
           "Description": "分享的消息摘要，最长600个字"

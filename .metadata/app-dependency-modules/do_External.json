@@ -5,10 +5,10 @@
   "Name": "启动外部应用",
   "Version": "Internal",
   "Description": "启动外部应用或系统的一些应用，比如浏览器，短信等",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/R/20150624/11c193e8-d7d4-4200-b0ee-9d6b81c1db21.png",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_External/external.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "iOS7.0"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
@@ -16,11 +16,11 @@
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
@@ -30,11 +30,36 @@
   "Events": [],
   "syncMethodes": [
     {
+      "ID": "bulkSMS",
+      "Name": "打开发送短信界面，支持群发短信",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "number",
+          "Name": "手机号",
+          "Type": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "手机号，为JSON Array格式，如['10086','138xxx']"
+        },
+        {
+          "ID": "body",
+          "Name": "内容",
+          "Type": "String",
+          "Required": 0,
+          "DefaultValue": "",
+          "Description": "内容"
+        }
+      ]
+    },
+    {
       "ID": "installApp",
       "Name": "安装app",
       "Description": "执行这个方法会打开系统的安装界面安装data://目录下的一个apk文件，仅支持android平台",
       "ReturnType": "",
-      "ReturnDesc": "返回true或false",
+      "ReturnDesc": "",
       "Paras": [
         {
           "ID": "path",
@@ -48,7 +73,7 @@
     },
     {
       "ID": "openApp",
-      "Name": "启动其他应用",
+      "Name": "启动第三方应用",
       "Description": "如果唤醒id对应的应用不存在，返回失败",
       "ReturnType": "Bool",
       "ReturnDesc": "返回true或false",
@@ -59,7 +84,7 @@
           "Type": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "其他应用被唤醒的唯一标识。不同的手机操作系统唤醒机制不一样，唤醒id的格式也不一样。我们会有专门的文档介绍。"
+          "Description": "其他应用被唤醒的唯一标识。不同的手机操作系统唤醒机制不一样，唤醒id的格式也不一样。我们会有专门的文档介绍"
         },
         {
           "ID": "data",
@@ -67,14 +92,14 @@
           "Type": "Node",
           "Required": 0,
           "DefaultValue": "",
-          "Description": "打开其他应用可以传递一些数据，数据的格式是JSON的键值对。"
+          "Description": "打开其他应用可以传递一些数据，数据的格式是JSON的键值对"
         }
       ]
     },
     {
       "ID": "openContact",
       "Name": "打开系统通讯录界面",
-      "Description": "",
+      "Description": "iOS平台8.0以下不支持",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": []
@@ -82,7 +107,7 @@
     {
       "ID": "openDial",
       "Name": "打开拨号界面",
-      "Description": "打开系统拨号界面",
+      "Description": "直接打开系统拨号界面",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": [
@@ -92,7 +117,7 @@
           "Type": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "用户传入的号码可以显示到拨号界面"
+          "Description": "拨号界面显示的号码"
         }
       ]
     },
@@ -100,7 +125,7 @@
       "ID": "openFile",
       "Name": "打开外部文档",
       "Description": "android需要先在手机上安装打开相应文件的第三方软件",
-      "ReturnType": "Bool",
+      "ReturnType": "",
       "ReturnDesc": "成功返回true，失败返回false",
       "Paras": [
         {
@@ -122,11 +147,11 @@
       "Paras": [
         {
           "ID": "to",
-          "Name": "收件箱地址",
+          "Name": "收信人地址",
           "Type": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "收件箱地址，非空"
+          "Description": ""
         },
         {
           "ID": "subject",
@@ -165,16 +190,33 @@
           "ID": "body",
           "Name": "内容",
           "Type": "String",
-          "Required": 1,
+          "Required": 0,
           "DefaultValue": "",
           "Description": "内容"
         }
       ]
     },
     {
+      "ID": "openSystemSetting",
+      "Name": "打开系统设置界面",
+      "Description": "",
+      "ReturnType": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "type",
+          "Name": "类型",
+          "Type": "String",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "目前支持GPS：打开GPS设置界面"
+        }
+      ]
+    },
+    {
       "ID": "openURL",
       "Name": "调用系统默认浏览器",
-      "Description": "手机缺省都有自带的浏览器，这个方法可以调用这个浏览器打开指定的url",
+      "Description": "该方法可调用移动设备系统自带的浏览器打开指定的url",
       "ReturnType": "",
       "ReturnDesc": "",
       "Paras": [
@@ -184,7 +226,7 @@
           "Type": "String",
           "Required": 1,
           "DefaultValue": "",
-          "Description": "操作系统浏览器打开的url地址"
+          "Description": "要访问的url地址"
         }
       ]
     }

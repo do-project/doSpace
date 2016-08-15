@@ -5,28 +5,41 @@
   "Name": "纵向滑动视图",
   "Version": "Internal",
   "Description": "这个UI组件包含多个子视图(UI文件），实现多个子视图之间上下平缓滑动效果，该组件还支持设置多个不同模板视图",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_VerticalSlideView/纵向滑动ver.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_VerticalSlideView/纵向滑动ver.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7"
   },
   "Android": {
     "Support": 1,
-    "MinVersion": "14"
+    "MinVersion": "4.0"
   },
   "Windows": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "WindowsPhone": {
     "Support": 1,
-    "MinVersion": "8.1"
+    "MinVersion": "10"
   },
   "Html": {
     "Support": 1,
     "MinVersion": "5.0"
   },
   "Properties": [
+    {
+      "ID": "allowGesture",
+      "Name": "是否支持手势滑动",
+      "Type": "Bool",
+      "DefaultValue": "true",
+      "EditType": "0",
+      "Group": "",
+      "Description": "当属性值为true时，组件可通过手势上下滑动来切换页面；为false时，手势无法滑动，只能通过修改index来切换页面，windowsPC平台不支持",
+      "Design": {
+        "Type": "Boolean",
+        "Data": []
+      }
+    },
     {
       "ID": "index",
       "Name": "当前滑动UIView索引",

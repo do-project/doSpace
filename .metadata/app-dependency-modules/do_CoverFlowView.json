@@ -8,7 +8,7 @@
   "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_CoverFlowView/cover.jpg",
   "IOS": {
     "Support": 1,
-    "MinVersion": "7"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
@@ -31,6 +31,7 @@
       "ID": "index",
       "Name": "当前滑动View索引",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "0",
       "EditType": "1",
       "Group": "",
@@ -44,6 +45,7 @@
       "ID": "looping",
       "Name": "左右无限滑动",
       "Type": "Bool",
+      "Type_JavaScript": "Bool",
       "DefaultValue": "false",
       "EditType": "0",
       "Group": "",
@@ -57,6 +59,7 @@
       "ID": "spacing",
       "Name": "间距",
       "Type": "Number",
+      "Type_JavaScript": "Number",
       "DefaultValue": "30",
       "EditType": "0",
       "Group": "",
@@ -70,6 +73,7 @@
       "ID": "templates",
       "Name": "显示视图对应UI模板文件",
       "Type": "Node",
+      "Type_JavaScript": "Node",
       "DefaultValue": "",
       "EditType": "0",
       "Group": "",
@@ -85,12 +89,14 @@
       "ID": "indexChanged",
       "Description": "滑动显示当前视图后触发该事件",
       "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
       "ReturnDesc": "返回当前index"
     },
     {
       "ID": "touch",
       "Description": "点击cell触发",
       "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
       "ReturnDesc": "当前cell的index值"
     }
   ],
@@ -100,12 +106,14 @@
       "Name": "绑定视图模板数据",
       "Description": "绑定数据类型为do_ListData实例",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": [
         {
           "ID": "data",
           "Name": "数据",
           "Type": "Node",
+          "Type_JavaScript": "Node",
           "Required": 0,
           "DefaultValue": "",
           "Description": ""
@@ -117,6 +125,7 @@
       "Name": "刷新数据",
       "Description": "支持动态刷新当前视图显示数据",
       "ReturnType": "",
+      "ReturnType_JavaScript": "",
       "ReturnDesc": "",
       "Paras": []
     }

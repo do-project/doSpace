@@ -5,14 +5,14 @@
   "Name": "多页面滑动视图",
   "Version": "Internal",
   "Description": "支持从最左侧或右侧边缘滑出视图，整体侧滑视图带有缩放和渐变效果；",
-  "Icon": "https://deviceone.blob.core.chinacloudapi.cn/store/D/20160121/do_FragmentView/多页面滑动视图.jpg",
+  "Icon": "https://do-store.oss-cn-beijing.aliyuncs.com/D/20160121/do_FragmentView/多页面滑动视图.jpg",
   "IOS": {
     "Support": 1,
     "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
-    "MinVersion": "14"
+    "MinVersion": "4.0"
   },
   "Windows": {
     "Support": 1,
@@ -38,6 +38,32 @@
       "Design": {
         "Type": "Boolean",
         "Data": []
+      }
+    },
+    {
+      "ID": "supportGesture",
+      "Name": "支持手势滑动",
+      "Type": "String",
+      "DefaultValue": "both",
+      "EditType": "1",
+      "Group": "",
+      "Description": "包含三种类型，缺省both表示同时支持左右滑动",
+      "Design": {
+        "Type": "List",
+        "Data": [
+          {
+            "id": "both",
+            "value": "同时支持左右滑动"
+          },
+          {
+            "id": "left",
+            "value": "仅支持手势滑出左页"
+          },
+          {
+            "id": "right",
+            "value": "仅支持手势滑出右页"
+          }
+        ]
       }
     },
     {

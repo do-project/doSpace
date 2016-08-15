@@ -8,7 +8,7 @@
   "Icon": "",
   "IOS": {
     "Support": 1,
-    "MinVersion": "7"
+    "MinVersion": "7.0"
   },
   "Android": {
     "Support": 1,
@@ -32,7 +32,7 @@
       "ID": "fling",
       "Description": "手指在触摸屏上迅速移动，并松开的动作，松开时触发",
       "ReturnType": "Node",
-      "ReturnDesc": "{velocityX:'100',velocityY:'100'} 返回手指在手指x,y方向滑动的速率，其中正值表示的是往上和往右、负值表示的是往下和往左。iOS的速率是固定值"
+      "ReturnDesc": "{velocityX:'100',velocityY:'100'} 返回手指在手指x,y方向滑动的速率，其中正值表示的是往下和往右、负值表示的是往上和往左。iOS的速率是固定值"
     },
     {
       "ID": "longTouch",
